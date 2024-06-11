@@ -22,9 +22,11 @@ const AniadirLibro = () => {
         const tipo = event.target.tipo.value
 
         if(tipo === "FISICO"){
-            setLibro({isbn, titulo, autor, genero, cantCopias, tipo: "FISICO"});
+            const libroFisico = {isbn, titulo, autor, genero, cantCopias, tipo: "FISICO"}
+            setLibro(libroFisico);
         }else{
-            setLibro({isbn,titulo,autor,genero,cantCopias: 0,tipo: "DIGITAL"});
+            const libroDigital = {isbn,titulo,autor,genero,cantCopias: 0,tipo: "DIGITAL"}
+            setLibro(libroDigital);
         }
 
         const requestOptions ={

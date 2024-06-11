@@ -1,7 +1,8 @@
 const Login = () => {
     const login = (e) => {
         e.preventDefault();
-        console.log("Login");
+        //TODO
+        console.log("click");
     }
 
     return(
